@@ -5,7 +5,8 @@ using UnityEngine;
 public class Combining : MonoBehaviour
 {
     public GameObject betterFruit;
-    private void OnCollisionEnter2D(Collision2D collision)
+    public int fruitPoints;
+    private async void OnCollisionEnter2D(Collision2D collision)
     {
         if (gameObject.tag == collision.gameObject.tag)
         {
@@ -17,8 +18,20 @@ public class Combining : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-            Instantiate(betterFruit, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            await new WaitForSeconds(0.1f);
+
+            if (betterFruit != null)
+            {
+                var newFruit = Instantiate(betterFruit, transform.position, transform.rotation);
+                newFruit.GetComponent<Falling>().isInAir = false;
+                Spawner.score += fruitPoints;
+                Destroy(gameObject);
+            }
+            if (betterFruit == null)
+            {
+                Spawner.score += fruitPoints;
+                Destroy(gameObject);
+            }
         }
     }
 }

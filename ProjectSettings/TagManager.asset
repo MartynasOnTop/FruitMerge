@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Red
   - Green
+  - WaterMelon
+  - Peach
+  - Banana
+  - Lemon
+  - Apple
+  - Kiwi
+  - Orange
+  - Strawberry
   layers:
   - Default
   - TransparentFX

@@ -45,5 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruits:
-  - {fileID: 5564381227782240052, guid: 4236300f2d64f4e4287052ac642afe9b, type: 3}
-  - {fileID: 8997675179961553777, guid: e2c9f84104e3c8a4788e541146fc391b, type: 3}
+  - {fileID: 2710619470812876762, guid: 6bc5ffbeac824b740b722f4aeb7049ae, type: 3}
+  - {fileID: 8403136767871545051, guid: a31d2ede95a8a8440a7afba501307b8b, type: 3}
+  - {fileID: 4352351931471971319, guid: ec8341b807fe9904a82bf8edeafa1866, type: 3}
+  - {fileID: 2074363743392245876, guid: f7e6f42190a43a743bc9626250631472, type: 3}
