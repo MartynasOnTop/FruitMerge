@@ -14,6 +14,8 @@ public class Falling : MonoBehaviour
     private async void Update()
     {
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (mousePos.x < -2.6 || mousePos.x > 2.6) return;
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (isInAir == false) return;

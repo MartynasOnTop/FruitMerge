@@ -167,22 +167,7 @@ MonoBehaviour:
   fruitPoints: 12
   fruitColor: {r: 1, g: 0.027406208, b: 0, a: 1}
   combiningPart: {fileID: 7363340666773664233, guid: 844a4820eb1721c4aac023fa7866ef40, type: 3}
-  mergeSound: {fileID: 8300000, guid: 2fb8b70bfe2a20b4aa78b6d5dda30932, type: 3}
-  onMerge:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6549352455263830228, guid: 92b38449e4312784ea35c3fd9acee481, type: 3}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: playSound
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 2fb8b70bfe2a20b4aa78b6d5dda30932, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  mergeSound: {fileID: 3463653417766136944, guid: d7a7ce767665d0643bb5c3280a8894c7, type: 3}
 --- !u!114 &6860521593009710218
 MonoBehaviour:
   m_ObjectHideFlags: 0

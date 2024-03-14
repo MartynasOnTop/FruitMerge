@@ -10,7 +10,6 @@ public class Combining : MonoBehaviour
     public Color fruitColor;
     public ParticleSystem combiningPart;
     public AudioSource mergeSound;
-    public UnityEvent onMerge;
 
     private async void OnCollisionEnter2D(Collision2D collision)
     {
@@ -19,9 +18,10 @@ public class Combining : MonoBehaviour
 
         var newFruit = Instantiate(betterFruit, transform.position, Quaternion.identity);
         newFruit.GetComponent<Falling>().isInAir = false;
-        onMerge.Invoke();
+        
         Particles();
-
+        Instantiate(mergeSound);
+        Spawner.score += fruitPoints;
         Destroy(gameObject);
         Destroy(collision.gameObject);
     }
